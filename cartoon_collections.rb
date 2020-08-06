@@ -29,6 +29,11 @@ def find_valid_calls(planeteer_calls)
 
   # planeteer_calls.any? { |element| element == valid_calls }
  
+    planeteer_calls.detect do |element|
+  if valid_calls.include?(element)
+    element
+  end
+end
 end
 
 
